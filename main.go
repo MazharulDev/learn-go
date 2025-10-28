@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"learn-go/utils"
+)
 
 func showName(name string) string {
 	return name
@@ -33,5 +36,7 @@ func main() {
 	fmt.Println(mySum)
 	firstSum, secondSum := multipleSum(10, 20, 30, 40)
 	fmt.Println(firstSum, secondSum)
+	newSum := utils.Sum(5, 5)
+	fmt.Println(newSum)
 
 }
