@@ -2,6 +2,20 @@ package main
 
 import "fmt"
 
+func showName(name string) string {
+	return name
+}
+
+func sum(a int, b int) int {
+	return a + b
+}
+
+func multipleSum(a int, b int, c int, d int) (firstSumParams int, secondSumParams int) {
+	firstSum := a + b
+	secondSum := c + d
+	return firstSum, secondSum
+}
+
 func main() {
 	name := "Mazharul"
 	age := 25
@@ -12,5 +26,12 @@ func main() {
 	fmt.Println("Age:", age)
 	fmt.Println("Height:", height)
 	fmt.Println("Is Programmer:", isProgrammer)
+	myName := showName("Md Mazharul Islam")
+	fmt.Println(myName)
+
+	mySum := sum(10, 20)
+	fmt.Println(mySum)
+	firstSum, secondSum := multipleSum(10, 20, 30, 40)
+	fmt.Println(firstSum, secondSum)
 
 }
