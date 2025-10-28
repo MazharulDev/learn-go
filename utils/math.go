@@ -9,3 +9,7 @@ func MultipleSum(a int, b int, c int, d int) (firstSumParams int, secondSumParam
 	secondSum := c + d
 	return firstSum, secondSum
 }
+
+func Introduce(name string, age int) (string, int) {
+	return name, age
+}

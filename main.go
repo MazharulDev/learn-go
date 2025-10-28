@@ -38,5 +38,7 @@ func main() {
 	fmt.Println(firstSum, secondSum)
 	newSum := utils.Sum(5, 5)
 	fmt.Println(newSum)
+	nameMe, ageMe := utils.Introduce("Md Mazharul Islam", 25)
+	fmt.Println("My name is", nameMe, "and I am", ageMe, "years old.")
 
 }
