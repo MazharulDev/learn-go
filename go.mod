@@ -1,3 +1,3 @@
-module github.com/hello
+module learn-go
 
 go 1.25.1
