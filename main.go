@@ -19,6 +19,16 @@ func multipleSum(a int, b int, c int, d int) (firstSumParams int, secondSumParam
 	return firstSum, secondSum
 }
 
+func conditionF(name string) string {
+	if name == "Mazharul" {
+		return " This is Mazharul"
+	} else if name == "arif" {
+		return " This is Arif"
+	} else {
+		return "Not Mazharul"
+	}
+}
+
 func main() {
 	name := "Mazharul"
 	age := 25
@@ -40,5 +50,7 @@ func main() {
 	fmt.Println(newSum)
 	nameMe, ageMe := utils.Introduce("Md Mazharul Islam", 25)
 	fmt.Println("My name is", nameMe, "and I am", ageMe, "years old.")
+	findMazharul := conditionF("arif")
+	fmt.Println(findMazharul)
 
 }
