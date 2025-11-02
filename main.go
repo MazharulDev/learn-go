@@ -29,6 +29,11 @@ func conditionF(name string) string {
 	}
 }
 
+type Person struct {
+	Name string
+	Age  int
+}
+
 func main() {
 	name := "Mazharul"
 	age := 25
@@ -52,5 +57,19 @@ func main() {
 	fmt.Println("My name is", nameMe, "and I am", ageMe, "years old.")
 	findMazharul := conditionF("arif")
 	fmt.Println(findMazharul)
+	arr1 := [3]int{1, 2, 3}
+	fmt.Println(arr1)
+
+	// for i := 0; i <= 100; i++ {
+	// 	fmt.Println(i)
+	// }
+
+	var person Person
+	person.Name = "Mazharul"
+	person.Age = 25
+	fmt.Println(person)
+
+	map1 := map[string]int{"one": 1, "two": 2}
+	fmt.Println(map1)
 
 }
